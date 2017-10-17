@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shd"
+        android:id="@+id/img"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/gray"
+
+            android:text="Gray"
+            android:textColor="#FEFFF5"
+            android:textSize="12sp"
+            android:onClick="processImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/green"
+            android:text="Green"
+            android:textColor="#FEFFF5"
+            android:textSize="12sp"
+            android:onClick="processImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/red"
+            android:text="Red"
+            android:textColor="#FEFFF5"
+            android:textSize="12sp"
+            android:onClick="processImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/dark"
+
+            android:text="Dark"
+            android:textColor="#FEFFF5"
+            android:textSize="12sp"
+            android:onClick="processImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bright"
+            android:text="Bright"
+            android:textColor="#FEFFF5"
+            android:textSize="12sp"
+            android:onClick="processImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/blue"
+            android:text="Blue"
+            android:textColor="#FEFFF5"
+            android:textSize="12sp"
+            android:onClick="processImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sk"
+        android:max="100"
+        android:onClick="processImage"
+        />
+</LinearLayout>

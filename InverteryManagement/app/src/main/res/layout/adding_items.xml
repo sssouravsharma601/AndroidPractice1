@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Adding Item"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:background="#FF0000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Item"
+            android:id="@+id/name"
+            android:background="#FFFFFF"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Item  Description...."
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:id="@+id/des"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.21" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/Quantity"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:textSize="30dp"
+            android:hint="Enter Quntity" />
+
+        <Spinner
+            android:layout_width="155dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="43dp"
+            android:id="@+id/addspn"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/price"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:textSize="30dp"
+            android:hint="Enter Price" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="ADD"
+            android:id="@+id/adding"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

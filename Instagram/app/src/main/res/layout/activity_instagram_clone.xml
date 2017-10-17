@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.felight.ci.InstagramCloneActivity">
+
+    <ImageView
+        android:src="@drawable/shd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivResult"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="244dp" />
+
+    <Button
+        android:onClick="processImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gray Scale"
+        android:id="@+id/btnGrayScale"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="163dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blur"
+        android:id="@+id/btnBlur"
+        android:layout_alignBottom="@+id/btnGrayScale"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="getImageFromCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Image fom Camera"
+        android:id="@+id/btnCamera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

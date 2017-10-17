@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Item"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:background="#FF0000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatespn"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Quantity - "
+            android:textSize="30dp"
+            />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Qp"
+        android:textSize="25dp"
+        android:text="+"
+
+        />
+        <TextView
+            android:layout_width="155dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Quantity"
+            android:id="@+id/qun" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Qs"
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:text="-"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Price - "
+            android:textSize="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="+"
+                android:id="@+id/Pp"
+                />
+            <TextView
+                android:layout_width="155dp"
+                android:textSize="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:hint="Price"
+                android:id="@+id/price" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="25dp"
+                android:text="-"
+                android:id="@+id/Ps"/>
+        </LinearLayout>
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="45dp"
+    android:text="Submit"
+    android:textSize="30dp"
+    android:id="@+id/submit"
+    android:layout_gravity="center"
+    />
+
+    </LinearLayout>
+
+</LinearLayout>
